@@ -10,6 +10,9 @@ This project is **SOC** oriented so the decaupling is quiete shown and you won't
 1. **API**.
 2. **Front-End**.
 And each folder hold a piece of the puzzle. and if you want to run it you need first to install the depencencies using both:
-> npm install // so you can install server side libs in the **API** folder
+
+> npm install // so you can install server side libs in the **API** folder.
+
 and 
+
 > npm install && bower install // so you can install **grunt** and **AngularJS** needed depencencies in the **Front-End** folder.
