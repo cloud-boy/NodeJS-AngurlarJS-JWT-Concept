@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "my json web token training",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Houssem Yahiaoui",
+  "license": "MIT",
+  "devDependencies": {
+  	 "bcrypt-nodejs": "0.0.3",
+    "express": "^4.10.2",
+    "jwt-simple": "^0.2.0",
+    "moment": "^2.8.4",
+    "mongoose": "^3.8.19",
+    "request": "^2.51.0",
+    "morgan": "^1.5.1"
+  }
+}

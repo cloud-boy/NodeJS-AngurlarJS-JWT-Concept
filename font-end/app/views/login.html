@@ -1,0 +1,32 @@
+<form name="register" class="form-signin" novalidate ng-submit="login()">
+  <h1>Login</h1>
+  <input name="email" type="email" ng-model="email"class="form-control" placeholder="Email address" required min="1">
+  <!-- <p class="help_block" ng-show="register.email.$dirty && register.email.$invalid">Add a valide email</p>-->
+  <div ng-messages="register.email.$error" class="errors">
+    <span ng-message="required"><b>*</b></span>
+  </div>
+  <br />
+  <input name="password" type="password" ng-model="password" class="form-control" placeholder="Password" required>
+  <br />
+
+  <br/>
+  <button ng-disabled="register.$invalid" class="btn btn-lg btn-primary btn-block" type="submit">
+    Login
+  </button>
+  <br/>
+</form>
+<button class="btn btn-primary-btn-block" style="margin-left:245px">
+    <a ui-sref="register">Create Account</a>
+  </button>
+  <br />
+  <br />
+<div style="display:flex">
+  <button class="btn btn-default-btn-block" ng-click="authenticate('google')">
+    Using Google Account
+  </button>
+  <button class="btn btn-default-btn-block" ng-click="authenticate('facebook')" style="margin-left:20px">
+    Using Facebook Account
+  </button>
+</div>
+
+  <br />

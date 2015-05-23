@@ -1,0 +1,17 @@
+<div class="header" ng-controller="HeaderCtrl">
+  <ul class="nav nav-pills pull-right">
+    <li ui-sref-active="active" >
+      <a ui-sref="main" class="shui">Home</a>
+    </li>
+    <li ui-sref-active="active">
+      <a ui-sref="jobs">Jobs</a>
+    </li>
+    <li ui-sref-active="active" ng-hide="isAuthenticated()">
+      <a ui-sref="login" class="shui">Login</a>
+    </li>
+    <li ui-sref-active="active" ng-show="isAuthenticated()">
+      <a ui-sref="logout" class="shui">Logout</a>
+    </li>
+  </ul>
+  <h3 class="text-muted">JWT Training</h3>
+</div>

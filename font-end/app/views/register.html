@@ -1,0 +1,20 @@
+<form name="register" class="form-signin" novalidate ng-submit="auth()">
+  <h1>Register</h1>
+  <input name="displayName" ng-model="displayName" class="form-control" placeholder="Your name" type="text" required />
+  <br/>
+  <input name="email" type="email" ng-model="email"class="form-control" placeholder="Email address" required min="1">
+  <!-- <p class="help_block" ng-show="register.email.$dirty && register.email.$invalid">Add a valide email</p>-->
+  <div ng-messages="register.email.$error" class="errors">
+    <span ng-message="required"><b>*</b></span>
+  </div>
+  <br />
+  <input name="password" type="password" ng-model="password" class="form-control" placeholder="Password" required>
+  <br />
+  <input name="password_confirm" type="password" ng-model="password_confirm" class="form-control" placeholder="Confirm Password" required validate-equal="password">
+  <p class="help_block" ng-show="register.password_confirm.$dirty && register.password_confirm.$invalid">password don't match ! lol!</p>
+
+  <br/>
+  <button ng-disabled="register.$invalid" class="btn btn-lg btn-primary btn-block" type="submit">
+  Submit
+  </button>
+</form>
